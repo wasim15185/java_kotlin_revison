@@ -83,7 +83,7 @@ public class UpCastingDownCastingExample {
          *
          * --- This is called Upcasting .
          */
-        Parent p = new GrandChild(); // <-- (Upcasting)
+        Parent p = new GrandChild(); // <-- (Upcasting) [ But One thing when u what to run 'p' then comment p1,c,c1 variable ]
         Parent p1 = new Child(); // <-- (Upcasting) same as p object
 
         /*
