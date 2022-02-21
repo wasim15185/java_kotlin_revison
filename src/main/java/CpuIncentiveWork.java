@@ -13,7 +13,7 @@ class CpuIncentive {
 
     /**
      * constructor
-     * @param c
+     * @param c Callback InterFace
      * @param maxLimit
      */
     CpuIncentive(Callback c, int maxLimit) {

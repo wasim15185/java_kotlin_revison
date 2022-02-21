@@ -5,7 +5,7 @@ package parendchildexample;
  */
 class Parent {
 
-    private String TAG = this.getClass().toString();
+    protected String TAG = getTag() ;
 
 
     protected void println(String str) {
@@ -23,6 +23,10 @@ class Parent {
     public void funInParent3() {
         println("I am funInParent3() in " + TAG + " From Class");
     }
+
+    protected String getTag(){
+        return this.getClass().toString();
+    }
 }
 
 
@@ -32,7 +36,6 @@ class Parent {
 
 class Child extends Parent {
 
-    private String TAG = this.getClass().toString();
 
     public void funInChild1() {
         println("I am funInChild1() in " + TAG + " From Class");
@@ -40,6 +43,11 @@ class Child extends Parent {
 
     public void funInChild2() {
         println("I am funInChild2() in " + TAG + " From Class");
+    }
+
+    @Override
+    protected String getTag() {
+        return this.getClass().toString();
     }
 }
 
@@ -56,6 +64,11 @@ class GrandChild extends Child {
 
     public void funInGrandChild2() {
         println("I am funInGrandChild2() in " + TAG + " From Class");
+    }
+
+    @Override
+    protected String getTag() {
+        return this.getClass().toString();
     }
 }
 
@@ -84,6 +97,10 @@ public class UpCastingDownCastingExample {
 
         Child c = (Child) p; // <-- (DownCasting)
         Child c1 = (Child) p1 ; // <-- (DownCasting)
+
+        c1.funInChild1();
+        c.funInChild1();
+
 
 
     }

@@ -1,28 +1,5 @@
 package thread;
 
-class Forloop {
-    private int limit;
-
-    private String threadName;
-
-    public void setThreadName(String threadName){
-        this.threadName=threadName ;
-    }
-
-    public Forloop(int l  ) {
-        limit = l;
-    }
-
-    public   void execute() {
-
-        synchronized (this) {
-            for (int i = 0; i < limit; i++) {
-                System.out.println(threadName + "thread is running And value is " + i);
-            }
-        }
-    }
-}
-
 
 
 
