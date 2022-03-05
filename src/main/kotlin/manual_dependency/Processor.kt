@@ -1,4 +1,4 @@
-package dependency
+package manual_dependency
 
 open class Processor {
 

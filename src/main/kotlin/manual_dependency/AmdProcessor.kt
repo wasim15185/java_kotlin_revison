@@ -1,4 +1,4 @@
-package dependency
+package manual_dependency
 
 class AmdProcessor:Processor() {
     override fun run() {

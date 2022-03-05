@@ -1,4 +1,4 @@
-package dependency
+package manual_dependency
 
 class IntelProcessor:Processor() {
     override fun run() {
