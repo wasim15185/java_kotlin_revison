@@ -9,5 +9,7 @@ public class SomeExampleOfException {
       System.out.println(e.getMessage());
     }
 
+
+
   }
 }

@@ -10,8 +10,10 @@ fun main() {
     val amdProcessor=AmdProcessor()
     val intelProcessor = IntelProcessor()
 
+
     val computer = Computer(intelProcessor)
 
     computer.execute()
 
 }
+
